@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>ex", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>e", "<ENTER>")
 
 
@@ -19,3 +19,20 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+vim.keymap.set("n", "<space>", "<nop>", {silent = true})
+vim.keymap.set("n", "<C- >", "<nop>", {silent = true})
+
+vim.keymap.set("t", "<M-m>", "<C-\\><C-N><C-w>h")
+vim.keymap.set("t", "<M-,>", "<C-\\><C-N><C-w>j")
+vim.keymap.set("t", "<M-.>", "<C-\\><C-N><C-w>k")
+vim.keymap.set("t", "<M-/>", "<C-\\><C-N><C-w>l")
+
+vim.keymap.set("i", "<M-m>", "<C-\\><C-N><C-w>h")
+vim.keymap.set("i", "<M-,>", "<C-\\><C-N><C-w>j")
+vim.keymap.set("i", "<M-.>", "<C-\\><C-N><C-w>k")
+vim.keymap.set("i", "<M-/>", "<C-\\><C-N><C-w>l")
+
+vim.keymap.set("n", "<M-m>", "<C-w>h")
+vim.keymap.set("n", "<M-,>", "<C-w>j")
+vim.keymap.set("n", "<M-.>", "<C-w>k")
+vim.keymap.set("n", "<M-/>", "<C-w>l")

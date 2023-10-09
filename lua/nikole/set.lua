@@ -21,9 +21,25 @@ vim.incsearch = true
 
 vim.termguicolors = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "80,100"
 
 vim.g.mapleader = " "
+
+vim.keymap.set("t", "<A-m>", "<C-\\><C-N><C-w>h")
+vim.keymap.set("t", "<A-,>", "<C-\\><C-N><C-w>j")
+vim.keymap.set("t", "<A-.>", "<C-\\><C-N><C-w>k")
+vim.keymap.set("t", "<A-/>", "<C-\\><C-N><C-w>l")
+
+vim.keymap.set("i", "<A-m>", "<C-\\><C-N><C-w>h")
+vim.keymap.set("i", "<A-,>", "<C-\\><C-N><C-w>j")
+vim.keymap.set("i", "<A-.>", "<C-\\><C-N><C-w>k")
+vim.keymap.set("i", "<A-/>", "<C-\\><C-N><C-w>l")
+
+vim.keymap.set("n", "<A-m>", "<C-w>h")
+vim.keymap.set("n", "<A-,>", "<C-w>j")
+vim.keymap.set("n", "<A-.>", "<C-w>k")
+vim.keymap.set("n", "<A-/>", "<C-w>l")
+
