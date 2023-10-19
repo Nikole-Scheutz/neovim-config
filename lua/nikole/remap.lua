@@ -22,6 +22,7 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<space>", "<nop>", {silent = true})
 vim.keymap.set("n", "<C- >", "<nop>", {silent = true})
 
+-- window navigation using <A-|m|,|.|/> instead of <C-w>h|j|k|l in all modes but visual
 vim.keymap.set("t", "<M-m>", "<C-\\><C-N><C-w>h")
 vim.keymap.set("t", "<M-,>", "<C-\\><C-N><C-w>j")
 vim.keymap.set("t", "<M-.>", "<C-\\><C-N><C-w>k")
