@@ -37,3 +37,8 @@ vim.keymap.set("n", "<M-n>", "<C-w>h")
 vim.keymap.set("n", "<M-e>", "<C-w>j")
 vim.keymap.set("n", "<M-i>", "<C-w>k")
 vim.keymap.set("n", "<M-o>", "<C-w>l")
+
+vim.keymap.set("n", "<M-C-n>", "<C-w><")
+vim.keymap.set("n", "<M-C-e>", "<C-w>+")
+vim.keymap.set("n", "<M-C-i>", "<C-w>-")
+vim.keymap.set("n", "<M-C-o>", "<C-w>>")
