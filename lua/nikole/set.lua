@@ -18,6 +18,8 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
 vim.opt.hlsearch = false
 vim.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.termguicolors = true
 
