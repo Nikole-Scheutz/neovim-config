@@ -8,6 +8,8 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+vim.fn.matchadd('errorMsg', [[\s\+$]])
+
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
